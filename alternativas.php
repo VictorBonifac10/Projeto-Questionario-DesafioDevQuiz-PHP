@@ -81,11 +81,21 @@
                 <h2><b>QUESTÃO: <?php echo $questao; ?> ?<b></h2>
                     <form action="alternativas.php?pergunta_id=<?php echo $_GET["pergunta_id"]; ?>" method="post">
                         <input type="hidden" name="pergunta_id" value="<?php echo $_GET["pergunta_id"]; ?>" />
-                            <input type="text" name="1" class="inputUser" /><input type="radio" name="correto" value="1"><br>
-                                <input type="text" name="2" class="inputUser" /><input type="radio" name="correto" value="2"><br>
-                            <input type="text" name="3" class="inputUser" /><input type="radio" name="correto" value="3"><br>
-                                <input type="text" name="4"  class="inputUser"/><input type="radio" name="correto" value="4"><br>
-                            <input type="text" name="5"  class="inputUser"/> <input type="radio" name="correto" value="5"><br><br>
+                        
+                            <input type="text" name="1" class="inputUser" required/>
+                        <input type="radio" name="correto" value="1" required><br>
+                        
+                                <input type="text" name="2" class="inputUser" required />
+                        <input type="radio" name="correto" value="2" required><br>
+                        
+                            <input type="text" name="3" class="inputUser" required />
+                        <input type="radio" name="correto" value="3" required><br>
+                        
+                                <input type="text" name="4"  class="inputUser" required/>
+                        <input type="radio" name="correto" value="4" required><br>
+                        
+                            <input type="text" name="5"  class="inputUser" required/> 
+                        <input type="radio" name="correto" value="5" required><br><br>
                 <h5><b>AVISO, NÃO SE ESQUECE DE MARCAR A OPÇÃO QUE CONSIDERA VERDADEIRA!<b></h5>
                         <button type="submit" class="btn">Salvar</button>
                     <a href="./perguntas.php" class="btn">Voltar</a><center>
